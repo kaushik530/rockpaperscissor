@@ -48,5 +48,4 @@ else if(userscore<botscore){
 } 
 else{
     console.log("Draw!!!!");
-    location.reload();
 }
