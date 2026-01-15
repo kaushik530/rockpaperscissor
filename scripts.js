@@ -40,7 +40,6 @@ function toggleButtons(state) {
 userbuttons.forEach(btn => {btn.addEventListener("click",(e) => 
     {
         pick=e.currentTarget.value;
-        rounds++;
         playround();
     })})
 
@@ -50,7 +49,7 @@ userbuttons.forEach(btn => {btn.addEventListener("click",(e) =>
 function playround(){
 
 //associate whole numbers with rock(1),paper(2),scissor(3)
-        console.log(active);
+        console.log(true);
         if(pick==="rock") userchoice=1;
         else if (pick==="paper") userchoice=2;
         else if(pick==="scissor") userchoice=3;
@@ -77,10 +76,9 @@ function playround(){
         result.textContent=`user chose ${arr[userchoice]} and bot chose ${arr[botchoice]},bot wins this round`
 
     }
-
-
+    rounds++;
     if(rounds===5){
-    toggleButtons(userbutton);
+    toggleButtons(active);
     //compare overall user and computer score to evaluate winner
     console.log("RESULTTTTTTTTTT");
     if(userscore>botscore)
