@@ -4,13 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
     <script src="scripts.js" defer></script>
 </head>
 <body>
-   <style>
-    body {
-        background-color: black;
-    }
-   </style>
+    
+    <div class="score">
+    <p><strong>USER:</strong> <span class="usrscr"> </span></p>
+    <p><strong>BOT:</strong> <span class="botscr"> </span></p>
+
+    </div>
+    <div class="test">
+    <div id="userchoice"> 
+        <button class="btnstyle userbutton"  value="rock">
+            <img class="choiceimg" src="images/rock.jpg">
+        </button>
+
+        <button class="btnstyle userbutton" value="paper">
+        <img class="choiceimg" src="images/paper.png">
+        </button>
+
+        <button class="btnstyle userbutton"  value="scissor">
+        <img class="choiceimg" src="images/scissor.png">
+        </button>
+    </div>
+
+    <button class="start">start</button>
+</div>
+    <div id="result">hiiiii</div>
 </body>
 </html>
