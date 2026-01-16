@@ -1,5 +1,7 @@
 body {
-background-color: beige;
+background-color: lightgray;
+margin-bottom: 100px;
+margin-top: 0px;
 }
 .versus{
     display: flex;
@@ -12,8 +14,9 @@ strong{
 }
 
 .start{
-    border-radius: 500px;
+    border-radius: 700px;
     flex-grow: 0;
+    align-items: c;
     flex-shrink: 0;
 }
 
@@ -44,9 +47,33 @@ strong{
     box-shadow: 2px 4px 0 rgba(255, 0, 0, 0.623);
     object-fit: cover;
 }
-.score{
-    margin-left: 10px;
-    margin-top: 50px;
+
+.score {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.score p {
+  flex: 0 0 200px;   /* fixed width */
+  text-align: center;
+  white-space: nowrap;
+}
+
+#result {
+  flex: 1 1 0;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  padding-bottom: 10px;
+}
+
+#result {
+    width: 400px;
 }
 
 .btnstyle{
@@ -61,4 +88,9 @@ strong{
 
 .btnstyle:active:not(:disabled) {
   box-shadow: 0 1px 0 rgba(0,0,0,0.3);
+}
+.result-box {
+  flex: 1;
+  padding: 0px 300px;
+  max-width: 500px;
 }
